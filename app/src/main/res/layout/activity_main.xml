@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    <RadioGroup
+            android:id="@+id/focusGain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+        <RadioButton
+                android:id="@+id/gain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AUDIOFOCUS_GAIN"/>
+
+        <RadioButton
+                android:id="@+id/gainTransient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="AUDIOFOCUS_GAIN_TRANSIENT"/>
+
+        <RadioButton
+                android:id="@+id/gainTransientMayDuck"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_height="wrap_content"
+                android:text="AUDIOFOCUS_GAIN_TRANSIENT_MAY_DUCK"/>
+
+        <RadioButton
+                android:id="@+id/gainTransientExclusive"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_height="wrap_content"
+                android:text="AUDIOFOCUS_GAIN_TRANSIENT_EXCLUSIVE"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+        <Button
+                android:id="@+id/request"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Request"/>
+
+        <Button
+                android:id="@+id/abandon"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Abandon"/>
+
+    </LinearLayout>
+
+</LinearLayout>
